@@ -76,7 +76,7 @@ The above JSON format is not ready to be used by ElasticSearch and that's why th
 
 ### 1) Using the new integrated IMC API method "exportES"
 
-http://160.40.51.94/component/imc/api/exportES
+```/GET/exportES```
 
 ### 2) Using the middleware "imc2es" transformer PHP script
 

@@ -3,9 +3,7 @@ This README acts as an example of how to use ES+Kibana to import data and create
 
 ## Intro: Use ImproveMyCity existing API
 
-ImproveMyCity already has a complete API which can be accessed at 
-
-http://160.40.51.94/api
+ImproveMyCity already has a complete API which can be used to export various data
 
 Calling the `/GET/issues` method returns JSON in the following form 
 
@@ -72,7 +70,7 @@ Calling the `/GET/issues` method returns JSON in the following form
 ```
 
 ## STEP 1: Call exportES API method of IMC
-The above JSON format is not ready to be used by ElasticSearch and that's why there are two methods to make it ES-compatible
+The above JSON format is not ready to be used by ElasticSearch and that's why, for CUTLER, we introduced two methods to export directly into ES-compatible format
 
 ### 1) Using the new integrated IMC API method "exportES"
 
@@ -101,6 +99,8 @@ The exported file by using either method is ready to be indexed in ElasticSearch
 ```
 
 **Note** the transformed JSON contains no personal data (at least no first and last names)
+
+You can find the latest dataset in https://mklab.iti.gr/cutler/doku.php?id=wp8#data_sets
 
 
 ## STEP 2: Create the appropriate mappings if necessary

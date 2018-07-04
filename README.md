@@ -115,7 +115,7 @@ We can even do some more advanced things such as tokenizing text (e.g. title or 
 
 Even more advanced we can define to tokenize based on a `stop token filter` [more on official documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-stop-tokenfilter.html) for local languages (including greek and turkish)
 
-In order to create your mappings go to your instance of [Kibana](http://160.40.51.94:5601)
+In order to create your mappings go to your instance of Kibana
 
  `Kibana->Dev Tools -> Console` and send the following request:
 
@@ -134,7 +134,7 @@ PUT /imc
             "my_stop": {
                 "type": "stop",
                 "ignore_case": true,
-                "stopwords": "_english_"
+                "stopwords": "_greek_"
             }
         }
     }
@@ -194,7 +194,7 @@ You post the exported `imc.json` file to the ElasticSearch server by executing t
 
 ## STEP 4: Discover & create index
 
-Go to your instance of [Kibana](http://160.40.51.94:5601)
+Go to your instance of Kibana
 
 `Management -> Index pattern`
 
@@ -207,7 +207,7 @@ If everything works as expected, Kibana will display a list of all available fie
 
 ## STEP 5: Visualise
 
-Go to your instance of [Kibana](http://160.40.51.94:5601)
+Go to your instance of Kibana
 
 `Visualise -> Create a visualisation`
 
